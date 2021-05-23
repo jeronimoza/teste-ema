@@ -1,0 +1,42 @@
+inherited frmBaseDetail: TfrmBaseDetail
+  Caption = 'frmBaseDetail'
+  DesignerMasterStyle = 0
+  inherited lytContents: TLayout
+    TabOrder = 1
+    object lytLeft: TLayout
+      Align = Left
+      Size.Width = 300.000000000000000000
+      Size.Height = 600.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object lsbData: TListBox
+        Align = Client
+        Size.Width = 300.000000000000000000
+        Size.Height = 600.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 296.000000000000000000
+        Viewport.Height = 596.000000000000000000
+      end
+    end
+    object lytClient: TLayout
+      Align = Client
+      Size.Width = 500.000000000000000000
+      Size.Height = 600.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object tabDetail: TTabControl
+        Align = Client
+        Size.Width = 500.000000000000000000
+        Size.Height = 600.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        TabPosition = PlatformDefault
+      end
+    end
+  end
+end

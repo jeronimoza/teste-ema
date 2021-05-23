@@ -1,0 +1,12 @@
+inherited frmPeopleList: TfrmPeopleList
+  Caption = 'frmPeopleList'
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  inherited lytContents: TLayout
+    inherited lytClient: TLayout
+      inherited lsvData: TListView
+        OnItemClick = lsvDataItemClick
+      end
+    end
+  end
+end

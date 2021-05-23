@@ -1,0 +1,61 @@
+inherited frmPlanetDetail: TfrmPlanetDetail
+  Caption = 'frmPlanetDetail'
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  inherited lytContents: TLayout
+    inherited lytLeft: TLayout
+      inherited lsbData: TListBox
+        Viewport.Width = 300.000000000000000000
+        Viewport.Height = 600.000000000000000000
+      end
+    end
+    inherited lytClient: TLayout
+      inherited tabDetail: TTabControl
+        TabIndex = 1
+        Sizes = (
+          500s
+          574s
+          500s
+          574s)
+        object iteFilms: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 54.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Filmes'
+          object Layout1: TLayout
+            Align = Client
+            Size.Width = 500.000000000000000000
+            Size.Height = 574.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+        end
+        object iteResidents: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = True
+          Size.Width = 77.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Residentes'
+          object Layout2: TLayout
+            Align = Client
+            Size.Width = 500.000000000000000000
+            Size.Height = 574.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+        end
+      end
+    end
+  end
+end

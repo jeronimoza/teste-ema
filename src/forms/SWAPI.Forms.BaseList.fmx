@@ -1,0 +1,83 @@
+inherited frmBaseList: TfrmBaseList
+  Caption = 'frmBaseList'
+  Fill.Kind = Solid
+  DesignerMasterStyle = 0
+  inherited lytContents: TLayout
+    object lytTop: TLayout
+      Align = Top
+      Size.Width = 800.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object edtSearch: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akTop]
+        TabOrder = 0
+        Position.X = 200.000000000000000000
+        Position.Y = 14.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Pesquisar...'
+        object SearchEditButton1: TSearchEditButton
+          Action = actSearch
+          CanFocus = False
+          Cursor = crArrow
+          Size.Width = 28.000000000000000000
+          Size.Height = 18.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+    end
+    object lytBottom: TLayout
+      Align = Bottom
+      Position.Y = 550.000000000000000000
+      Size.Width = 800.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Button1: TButton
+        Action = actNextPage
+        Align = Right
+        Enabled = True
+        ImageIndex = -1
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 740.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'nexttoolbutton'
+        TabOrder = 0
+      end
+    end
+    object lytClient: TLayout
+      Align = Client
+      Size.Width = 800.000000000000000000
+      Size.Height = 500.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object lsvData: TListView
+        ItemAppearanceClassName = 'TListItemAppearance'
+        ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Size.Width = 800.000000000000000000
+        Size.Height = 500.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+    end
+  end
+  inherited aclBase: TActionList
+    OnUpdate = aclBaseUpdate
+    object actNextPage: TAction
+      OnExecute = actNextPageExecute
+    end
+    object actSearch: TAction
+      OnExecute = actSearchExecute
+    end
+  end
+end
